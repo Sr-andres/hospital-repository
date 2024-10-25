@@ -9,13 +9,15 @@ import "firebase/storage";
 
 
 
+// Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyC8f5LCDoPWxK22YkvoEo4Cd2euKcVmYwc",
-  authDomain: "jacoder-8cc28.firebaseapp.com",
-  projectId: "jacoder-8cc28",
-  storageBucket: "jacoder-8cc28.appspot.com",
-  messagingSenderId: "326092150571",
-  appId: "1:326092150571:web:d057e9d0d7ec8bced6976e",
+  apiKey: "AIzaSyBZaumGj3MGz31JUR62dQI5wNTCgKJsp0o",
+  authDomain: "repositorio-puesto-de-salud.firebaseapp.com",
+  projectId: "repositorio-puesto-de-salud",
+  storageBucket: "repositorio-puesto-de-salud.appspot.com",
+  messagingSenderId: "902352272355",
+  appId: "1:902352272355:web:4a1626577509a1f4f8fed6",
+  measurementId: "G-BDFFB094NE"
 };
 
 const app = initializeApp(firebaseConfig);
