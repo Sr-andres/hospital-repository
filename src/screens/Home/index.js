@@ -76,28 +76,30 @@ console.log(fileList)
         </div>
 
         <div className="upload-section">
-          <input
-            type="file"
-            onChange={(event) => {
-              setImageUpload(event.target.files[0]);
-              setMessage("");
-            }}
-          />
-          <button className="Upload" onClick={uploadFile}>Subir archivo</button>
-          {uploadProgress > 0 && (
-            <div className="progress-bar">
-              <div
-                className="progress-fill"
-                style={{ width: `${uploadProgress}%` }}
-              ></div>
-            </div>
-          )}
-          {message && <p>{message}</p>}
-        </div>
+  <input
+    id="Choosing"
+    type="file"
+    onChange={(event) => {
+      setImageUpload(event.target.files[0]);
+      setMessage("");
+    }}
+  />
+  <button className="Upload" onClick={uploadFile}>Subir archivo</button>
+  
+  {/* Siempre visible, pero con el progreso cambiado */}
+  <div className="progress-bar">
+    <div
+      className="progress-fill"
+      style={{ width: `${uploadProgress}%` }}
+    ></div>
+  </div>
+
+  {message && <p>{message}</p>}
+</div>
 
         <div className="files-section">
-          <h2>Archivos subidos</h2>
-          <input
+          <h2 className="h-upload">Buscar Archivos</h2>
+          <input id="barra-busqueda"
             type="text"
             placeholder="Buscar archivos..."
             value={searchTerm}
@@ -128,7 +130,7 @@ console.log(fileList)
           )}
         </div>
         <img src={img1} alt="Hospital San Juan de Dios" className="hospital-image" />
-        <h2>1. "Todos estamos aquí para ayudarnos unos a otros. Cuando estamos juntos, podemos cumplir cualquier cosa".</h2>
+        <h2 id="FinalSlogan">"Todos estamos aquí para ayudarnos unos a otros. Cuando estamos juntos, podemos cumplir cualquier cosa".</h2>
       </div>
       <div className="copyright_section">
         <div className="container">
