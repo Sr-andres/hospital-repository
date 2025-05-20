@@ -93,8 +93,8 @@ console.log(fileList)
       style={{ width: `${uploadProgress}%` }}
     ></div>
   </div>
-
   {message && <p>{message}</p>}
+  
 </div>
 
         <div className="files-section">
@@ -140,8 +140,12 @@ console.log(fileList)
         </div>
       </div>
       <div>
-        <a href="/file"> aaa</a>
+        <a href="/file"> archivos</a>
+      </div>
+      <div>
+       <a href="/login"> login </a> 
       </div>
     </div>
+    
   );
 }

@@ -192,7 +192,7 @@ ul {
   width: 100%;
   background-color: #fff; /* Fondo blanco cuando no hay progreso */
   border: 1px solid #ccc;
-  height: 10px; /* Ajusta el alto de la barra de progreso */
+  height: 0.8vw; /* Ajusta el alto de la barra de progreso */
   border-radius: 5px;
   margin-top: 10px;
 }
